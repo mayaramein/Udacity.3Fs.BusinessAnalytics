@@ -1,0 +1,15 @@
+Revenue Growth Rate (Optimistic),20%,,,
+Revenue Growth Rate (Baseline),10%,,,
+Revenue Growth Rate (Pessimistic),5%,,,
+Expense Growth Rate (Optimistic),10%,,,
+Expense Growth Rate (Baseline),8%,,,
+Expense Growth Rate (Pessimistic),6%,,,
+Initial Revenue,"4,664,120,000",,,
+Initial Expenses,"3,098,066,000",5596944000,5130532000,4897326000
+,,3407872600,3345911280,3283949960
+,,2189071400,1784620720,1613376040
+Scenario Selection,,0.391119046,0.34784321,0.329440197
+Baseline,,,,
+,5130532000,,,
+,3345911280,,,
+,1784620720,,,

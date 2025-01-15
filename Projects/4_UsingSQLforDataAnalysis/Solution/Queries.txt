@@ -1,0 +1,33 @@
+/* Query 1 */
+SELECT g.Name AS Genre, COUNT(il.InvoiceLineId) AS TracksSold
+FROM Genre g
+JOIN Track t ON g.GenreId = t.GenreId
+JOIN InvoiceLine il ON t.TrackId = il.TrackId
+GROUP BY g.Name
+ORDER BY TracksSold DESC;
+
+
+/* Query 2 */
+SELECT c.FirstName || ' ' || c.LastName AS Customer, SUM(i.Total) AS TotalSpent
+FROM Customer c
+JOIN Invoice i ON c.CustomerId = i.CustomerId
+GROUP BY c.CustomerId
+ORDER BY TotalSpent DESC
+LIMIT 5;
+
+/* Query 3 */
+SELECT c.Country, SUM(i.Total) AS Revenue
+FROM Customer c
+JOIN Invoice i ON c.CustomerId = i.CustomerId
+GROUP BY c.Country
+ORDER BY Revenue DESC;
+
+
+/* Query 4 */
+SELECT t.Name AS Track, COUNT(il.InvoiceLineId) AS Sales
+FROM Track t
+JOIN InvoiceLine il ON t.TrackId = il.TrackId
+GROUP BY t.TrackId
+ORDER BY Sales DESC
+LIMIT 5;
+
